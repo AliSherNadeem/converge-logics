@@ -1,7 +1,16 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
+      "@/*": ["src/*"],
+      "@/components/ui/*": ["src/components/ui/*"]
+    },
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "allowJs": true,
+    "checkJs": false // Disable type checking for JS files
+  },
+  "include": ["src/**/*", "**/*.jsx"],
+  "exclude": ["node_modules"]
 }
