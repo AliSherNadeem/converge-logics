@@ -51,7 +51,7 @@ export default function Navbar() {
             {navItems.map((item) => (
               <div key={item.name}>
                 {item.hasDropdown ? (
-                  <DropdownMenu>
+                  <DropdownMenu className="">
                     <DropdownMenuTrigger className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">
                       <span>{item.name}</span>
                       <ChevronDown className="h-4 w-4" />
@@ -80,7 +80,7 @@ export default function Navbar() {
             <Link href="/contact" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">
               Contact Us
             </Link>
-            <Button className="bg-lime-400 hover:bg-lime-500 text-black font-medium rounded-full px-6">
+            <Button variant="outline" className="bg-transparent border-lime-400 hover:bg-lime-400 text-black font-medium rounded-full px-6">
               Get Started →
             </Button>
           </div>
